@@ -1,0 +1,30 @@
+p {
+  font-family: Lato;
+}
+
+.box-class {
+  width: 10vh;
+  height: 10vh;
+  background-color: pink;
+}
+
+@include media-breakpoint-up(sm) {
+  .box-class {
+    background-color: red;
+  }
+}
+@include media-breakpoint-up(md) {
+  .box-class {
+    background-color: green;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .box-class {
+    background-color: orange;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .box-class {
+    background-color: yellow;
+  }
+}
