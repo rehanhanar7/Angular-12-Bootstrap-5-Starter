@@ -6,5 +6,20 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  vilroutes: any[] = [
+    {
+      path: '',
+      menuName: 'Home',
+    },
+    {
+      path: 'card',
+      menuName: 'Cards',
+    },
+    {
+      path: 'ticket',
+      menuName: 'Ticket',
+    },
+  ];
   name = 'Angular ' + VERSION.major;
+  constructor() {}
 }
