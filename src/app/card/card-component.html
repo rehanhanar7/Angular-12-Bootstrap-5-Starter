@@ -1,1 +1,11 @@
-<h1>Card Component</h1>
+<div>
+  <!-- Single card -->
+  <div *ngFor="let singlecard of cards" class="card" style="width: 18rem">
+    <img [src]="singlecard.imagesrc" class="card-img-top" alt="card1" />
+    <div class="card-body">
+      <h5 class="card-title">{{singlecard.name}}</h5>
+      <p class="card-text">{{singlecard.desc}}</p>
+      <button class="btn btn-primary">Go somewhere</button>
+    </div>
+  </div>
+</div>
