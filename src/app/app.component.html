@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container-fluid">
     <img src="assets/logo.svg" class="logo-class" [routerLink]="''" />
     <button
@@ -35,4 +35,6 @@
     </div>
   </div>
 </nav>
-<router-outlet></router-outlet>
+<div style="margin-top:8rem">
+  <router-outlet></router-outlet>
+</div>
