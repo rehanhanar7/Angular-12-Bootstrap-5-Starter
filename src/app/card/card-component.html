@@ -1,11 +1,23 @@
-<div>
-  <!-- Single card -->
-  <div *ngFor="let singlecard of cards" class="card" style="width: 18rem">
-    <img [src]="singlecard.imagesrc" class="card-img-top" alt="card1" />
-    <div class="card-body">
-      <h5 class="card-title">{{singlecard.name}}</h5>
-      <p class="card-text">{{singlecard.desc}}</p>
-      <button class="btn btn-primary">Go somewhere</button>
+<figure class="text-center" style="margin-top: 1rem">
+  <blockquote class="blockquote">
+    <p>Featured offers</p>
+  </blockquote>
+</figure>
+<div class="container">
+  <div class="row row-cols-auto">
+    <div
+      class="card col"
+      style="width: 18rem; margin: 1rem"
+      *ngFor="let singlecard of cards"
+    >
+      <img [src]="singlecard.imagesrc" class="card-img-top" alt="card1" />
+      <div class="card-body">
+        <h5 class="card-title">{{singlecard.title}}</h5>
+        <p class="card-text">{{singlecard.desc}}</p>
+      </div>
     </div>
   </div>
+</div>
+<div>
+  <!-- Single card -->
 </div>

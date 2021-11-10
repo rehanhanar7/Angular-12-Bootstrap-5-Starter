@@ -8,10 +8,6 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   vilroutes: any[] = [
     {
-      path: '',
-      menuName: 'Home',
-    },
-    {
       path: 'card',
       menuName: 'Cards',
     },
